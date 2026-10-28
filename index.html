@@ -764,7 +764,7 @@
             promptLatex: `$\\frac{${unsimplifiedNum}}{${unsimplifiedDen}} = \\text{___}$`,
             correctAnswer,
             options,
-            explanation: `Divide numerator and denominator by their greatest common divisor. Result: ${correctAnswer}.`,
+            explanation: `Divide numerator and denominator by their greatest common divisor. Result: $${correctAnswer}$.`,
             points: 1
           };
         }
@@ -800,7 +800,7 @@
             promptLatex: `$$\\begin{array}{r} ${w} \\\\ \\times \\quad ${t} \\\\ \\hline \\end{array}$$`,
             correctAnswer,
             options,
-            explanation: `Result: ${correctAnswer}.`,
+            explanation: `Result: $${correctAnswer}$.`,
             points: 1
           };
         } else {
@@ -822,7 +822,7 @@
             promptLatex: `$$\\begin{array}{r} ${h} \\\\ \\times \\quad ${t} \\\\ \\hline \\end{array}$$`,
             correctAnswer,
             options,
-            explanation: `Result: ${correctAnswer}.`,
+            explanation: `Result: $${correctAnswer}$.`,
             points: 1
           };
         }
@@ -875,7 +875,7 @@
           promptLatex,
           correctAnswer,
           options,
-          explanation: `Result: ${correctAnswer}.`,
+          explanation: `Result: $${correctAnswer}$.`,
           points: 1
         };
       }
@@ -914,7 +914,7 @@
           promptLatex: `$${picked.d} = \\text{___}$`,
           correctAnswer: correctAnswer,
           options,
-          explanation: `${picked.d} equals ${correctAnswer}.`,
+          explanation: `$${picked.d}$ equals $${correctAnswer}$.`,
           points: 1
         };
       }
@@ -998,7 +998,7 @@
           promptLatex,
           correctAnswer,
           options,
-          explanation: `Result: ${correctAnswer}.`,
+          explanation: `Result: $${correctAnswer}$.`,
           points: 1
         };
       }
@@ -1056,7 +1056,7 @@
             promptLatex: `$${percent}\\% \\text{ of } ${N} = \\text{___}$`,
             correctAnswer,
             options,
-            explanation: `Result: ${correctAnswer}.`,
+            explanation: `Result: $${correctAnswer}$.`,
             points: 1
           };
         }
@@ -1127,7 +1127,7 @@
           promptLatex,
           correctAnswer,
           options,
-          explanation: `Result: ${correctAnswer}.`,
+          explanation: `Result: $${correctAnswer}$.`,
           points: 1
         };
       }
@@ -1152,7 +1152,7 @@
             promptLatex: `$10^{${exp}} = \\text{___}$`,
             correctAnswer: formattedAns,
             options: ensureUniqueOptions(formattedAns, [formattedAns, (result * 10).toLocaleString(), (result / 10).toLocaleString(), (result * 100).toLocaleString()]),
-            explanation: `10^${exp} = ${formattedAns}.`,
+            explanation: `$10^{${exp}} = ${formattedAns}$.`,
             points: 1
           };
         } else {
@@ -1249,7 +1249,7 @@
           promptLatex,
           correctAnswer,
           options,
-          explanation: `Result: ${correctAnswer}.`,
+          explanation: `Result: $${correctAnswer}$.`,
           points: 1
         };
       }
@@ -1301,7 +1301,7 @@
           promptLatex: `$${promptLatex}$`,
           correctAnswer,
           options,
-          explanation: `Result: ${correctAnswer}.`,
+          explanation: `Result: $${correctAnswer}$.`,
           points: 1
         };
       }
@@ -1372,7 +1372,7 @@
           promptLatex,
           correctAnswer,
           options,
-          explanation: `Result: ${correctAnswer}.`,
+          explanation: `Result: $${correctAnswer}$.`,
           points: 1
         };
       }
@@ -1419,7 +1419,7 @@
           promptLatex: `$${promptLatex}$`,
           correctAnswer,
           options,
-          explanation: `Subtract equations to solve for variables. Result: ${correctAnswer}.`,
+          explanation: `Subtract equations to solve for variables. Result: $${correctAnswer}$.`,
           points: 1
         };
       }
@@ -1598,7 +1598,7 @@
           feedbackHTML = `
             <div class="feedback-box ${isCorrect ? 'correct' : 'incorrect'}">
               <strong>${isCorrect ? '✓ Correct' : '✗ Incorrect'}</strong>
-              <div class="explanation-text"><strong>Solution:</strong> $${q.explanation}$</div>
+              <div class="explanation-text"><strong>Solution:</strong> ${q.explanation}</div>
             </div>
           `;
         }
