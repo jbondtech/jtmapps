@@ -1644,7 +1644,7 @@
 
       if (isSubmitted) return;
       isSubmitted = true;
-
+      
       let score = 0;
       let totalPoints = 0;
 
@@ -1663,8 +1663,8 @@
 
       renderQuiz();
 
-      if (window.MathJax && window.MathJax.typesetPromise) {
-  MathJax.typesetPromise();
+     if (window.MathJax && window.MathJax.typesetPromise) {
+  MathJax.typesetPromise().catch((err) => console.log('MathJax error:', err));
 }
 
       // Send Score & Name Payload to Google Sheet
